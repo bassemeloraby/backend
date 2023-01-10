@@ -9,7 +9,7 @@ const app = express()
 app.use(cors())
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
-app.use('/tasks', require('./routes/taskRaoutes'));
+app.use('/api/tasks', require('./routes/taskRaoutes'));
 
 
 const port = process.env.PORT || '5000'
